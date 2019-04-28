@@ -1,11 +1,16 @@
 package ac.za.cput.project.factory;
 
-import ac.za.cput.project.domain.DvdStore;
+import ac.za.cput.project.domain.Customer;
+import org.junit.Test;
+
+import static org.junit.Assert.*;
 
 public class CustomerFactoryTest {
 
-    public static void main (String[]args){
-        DvdStore ps = new DvdStore();
-        ps.CreateCustomer("Member");
+    @Test
+    public void createCustomer() {
+
+        Customer customer = CustomerFactory.CreateCustomer("Members");
+        customer.typeOfCustomer();
     }
 }

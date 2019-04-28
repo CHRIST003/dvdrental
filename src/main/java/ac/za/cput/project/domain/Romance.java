@@ -1,8 +1,12 @@
 package ac.za.cput.project.domain;
 
-public class Romance implements Category {
-    @Override
-    public void canBe() {
-        System.out.println("Romance ");
+public class Romance extends Category {
+
+    public Romance(int categoryID, String name, String description) {
+        super(categoryID, name, description);
+    }
+
+    public void NameOfCategory(){
+        System.out.println("Romance");
     }
 }

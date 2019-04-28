@@ -1,16 +1,60 @@
 package ac.za.cput.project.domain;
 
-import ac.za.cput.project.factory.CustomerFactory;
 
 public class DvdStore {
 
-    public Customer CreateCustomer(String typeOfCustomer){
 
-        Customer c = CustomerFactory.CreateCustomer(typeOfCustomer);
+  private String name;
+  private String address;
 
-        c.buyDvd();
-        c.rent();
+  private DvdStore(){
 
-        return c;
+  }
+
+    private DvdStore(Builder builder){
+
+
+      this.name = builder.name;
+      this.address = builder.address;
+
+    }
+
+
+    public String getName() {
+        return name;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public static class Builder{
+
+
+        private String name;
+        private String address;
+
+
+        public Builder name(String name){
+            this.name = name;
+            return this;
+        }
+
+        public Builder address(String address){
+            this.address = address;
+            return this;
+        }
+
+        public DvdStore build(){
+            return new DvdStore(this);
+        }
+
+        @Override
+        public String toString() {
+            return "Builder{" +
+                    "name='" + name + '\'' +
+                    ", address='" + address + '\'' +
+                    '}';
+        }
     }
 }

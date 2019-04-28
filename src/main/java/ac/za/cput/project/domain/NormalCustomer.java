@@ -1,17 +1,13 @@
 package ac.za.cput.project.domain;
 
-public class NormalCustomer implements Customer {
+public class NormalCustomer extends Customer{
 
-    @Override
-    public void buyDvd() {
 
-        System.out.println(" As a normal customer Can buy the DVD");
+    public NormalCustomer(int custID, String name, String lastName, boolean canBuy, boolean canRent, double credit, String type) {
+        super(custID, name, lastName, canBuy, canRent, credit, type);
     }
 
-    @Override
-    public void rent() {
-
-        System.out.println("As a normal customer Can rent as well ");
-
+    public void typeOfCustomer(){
+        System.out.println(" This a normal customer to the store");
     }
 }

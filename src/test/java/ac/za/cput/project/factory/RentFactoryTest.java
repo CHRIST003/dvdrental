@@ -11,11 +11,9 @@ public class RentFactoryTest {
 
     @Test
     public void getRent() {
-        String rentId = "TY567";
-        String custId = "C56789";
-        String DvdId = "D56";
-        Rent a = RentFactory.getRent("TY567","C56789","D56");
-        System.out.println(a);
-        Assert.assertNotNull(((Rent) a).getRentId());
+        Rent a = RentFactory.getRent("TY567","C56789","D56","Christ","Nganga","0633073758", 500.00,
+                "Thor","Action", 100.00);
+                  System.out.println(a);
+                   Assert.assertNotNull(a.getRentId());
     }
 }

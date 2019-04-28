@@ -1,8 +1,12 @@
 package ac.za.cput.project.domain;
 
-public class Horror implements Category {
-    @Override
-    public void canBe() {
-        System.out.println("Horror ");
+public class Horror extends Category {
+
+    public Horror(int categoryID, String name, String description) {
+        super(categoryID, name, description);
+    }
+
+    public void NameOfCategory(){
+        System.out.println("Horror");
     }
 }

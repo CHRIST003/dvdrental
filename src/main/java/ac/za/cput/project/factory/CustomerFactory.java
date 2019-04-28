@@ -6,14 +6,14 @@ import ac.za.cput.project.domain.NormalCustomer;
 
 public class CustomerFactory {
 
-   public static Customer CreateCustomer(String typeOfCustomer){
+   public static Customer CreateCustomer(String type){
 
        Customer c = null;
-       if (typeOfCustomer.equals("Members")){
-           c = new Members();
+       if (type.equalsIgnoreCase("Members")){
+           c = new Members(23,"Christ","nganga",true,false,500.00,"Members");
        }else {
-           if (typeOfCustomer.equals("NormalCustomer")){
-               c = new NormalCustomer();
+           if (type.equalsIgnoreCase("NormalCustomer")){
+               c = new NormalCustomer(24,"John","Salumu",true,false,1000.00,"Normal Customer");
            }
        }
 

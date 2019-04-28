@@ -1,17 +1,14 @@
 package ac.za.cput.project.domain;
 
-public class Members implements Customer {
+public class Members extends Customer {
 
-    @Override
-    public void buyDvd() {
 
-        System.out.println("As a member I can buy a dvd");
+    public Members(int custID, String name, String lastName, boolean canBuy, boolean canRent, double credit, String type) {
+        super(custID, name, lastName, canBuy, canRent, credit, type);
     }
 
-    @Override
-    public void rent() {
+    public void typeOfCustomer(){
 
-        System.out.println("As a member I can rent a dvd");
-
+        System.out.println(" This customer is a member to the store");
     }
 }
