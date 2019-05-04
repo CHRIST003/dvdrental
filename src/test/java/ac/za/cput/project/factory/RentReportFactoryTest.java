@@ -1,6 +1,7 @@
 package ac.za.cput.project.factory;
 
 import ac.za.cput.project.domain.RentReport;
+import ac.za.cput.project.RentReportFactory;
 import org.junit.Assert;
 import org.junit.Test;
 

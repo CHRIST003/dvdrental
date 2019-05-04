@@ -1,4 +1,4 @@
-package ac.za.cput.project.factory;
+package ac.za.cput.project;
 
 import ac.za.cput.project.domain.ViewCustomer;
 import ac.za.cput.project.util.Amr;

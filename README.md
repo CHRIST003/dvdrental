@@ -38,4 +38,4 @@ If a customer has insufficient credit the option to pay the movie fee for this t
 	
 
 
-![](DvdRental%20Domain.png)
+![](dvdRental.png)

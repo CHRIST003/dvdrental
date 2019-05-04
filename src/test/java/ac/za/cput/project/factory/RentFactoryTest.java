@@ -1,11 +1,9 @@
 package ac.za.cput.project.factory;
 
-import ac.za.cput.project.domain.Dvd;
+import ac.za.cput.project.RentFactory;
 import ac.za.cput.project.domain.Rent;
 import org.junit.Assert;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 public class RentFactoryTest {
 

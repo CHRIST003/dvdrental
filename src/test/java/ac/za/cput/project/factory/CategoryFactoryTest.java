@@ -1,9 +1,8 @@
 package ac.za.cput.project.factory;
 
 import ac.za.cput.project.domain.Category;
+import ac.za.cput.project.CategoryFactory;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 public class CategoryFactoryTest {
 

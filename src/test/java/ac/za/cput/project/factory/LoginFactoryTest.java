@@ -1,7 +1,7 @@
 package ac.za.cput.project.factory;
 
-import ac.za.cput.project.domain.Admin;
 import ac.za.cput.project.domain.Login;
+import ac.za.cput.project.LoginFactory;
 import org.junit.Assert;
 import org.junit.Test;
 

@@ -1,5 +1,6 @@
 package ac.za.cput.project.factory;
 
+import ac.za.cput.project.DvdSoldListFactory;
 import ac.za.cput.project.domain.DvdSoldList;
 import org.junit.Assert;
 import org.junit.Test;

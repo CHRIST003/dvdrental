@@ -1,6 +1,7 @@
 package ac.za.cput.project.factory;
 
 
+import ac.za.cput.project.CustomerContactFactory;
 import ac.za.cput.project.domain.CustomerContact;
 import org.junit.Test;
 

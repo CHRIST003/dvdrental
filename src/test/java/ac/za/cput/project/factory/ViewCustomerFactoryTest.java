@@ -2,10 +2,9 @@ package ac.za.cput.project.factory;
 
 
 import ac.za.cput.project.domain.ViewCustomer;
+import ac.za.cput.project.ViewCustomerFactory;
 import org.junit.Assert;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 public class ViewCustomerFactoryTest {
 
