@@ -12,6 +12,7 @@ import java.util.Set;
 @RequestMapping("/dvdrental/Login")
 public class LoginController {
 
+    @SuppressWarnings("SpringJavaInjectionPointsAutowiringInspection")
     @Autowired
     private LoginServiceImpl service;
 

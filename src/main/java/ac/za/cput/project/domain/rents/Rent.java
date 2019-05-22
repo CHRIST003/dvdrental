@@ -1,7 +1,9 @@
 package ac.za.cput.project.domain.rents;
 
+import ac.za.cput.project.domain.dvds.ViewMovie;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 
+import java.util.Objects;
 import java.util.Set;
 
 @EntityScan
@@ -178,5 +180,18 @@ private Rent(Builder builder){
                 ", category='" + category + '\'' +
                 ", price=" + price +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Rent rent = (Rent) o;
+        return rentId.equals(rent.rentId);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(rentId);
     }
 }

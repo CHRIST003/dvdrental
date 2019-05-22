@@ -3,6 +3,8 @@ package ac.za.cput.project.domain.rents;
 
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 
+import java.util.Objects;
+
 @EntityScan
 public class RentReport {
 
@@ -97,6 +99,17 @@ public class RentReport {
         }
 
 
+        public Builder copy(RentReport rentReport) {
+
+            this.RentID = rentReport.RentID;
+            this.rentedDate = rentReport.rentedDate;
+            this.returnedDate = rentReport.returnedDate;
+            this.CustomerID = rentReport.CustomerID;
+            this.DvdID = rentReport.DvdID;
+            this.AmountPaid = rentReport.AmountPaid;
+
+            return this;
+        }
     }
 
     @Override
@@ -109,5 +122,18 @@ public class RentReport {
                 ", DvdID='" + DvdID + '\'' +
                 ", AmountPaid=" + AmountPaid +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        RentReport rentReport = (RentReport) o;
+        return RentID.equals(rentReport.RentID);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(RentID);
     }
 }

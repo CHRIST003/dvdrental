@@ -12,6 +12,7 @@ import java.util.Set;
 @RequestMapping("/dvdrental/admin")
 public class AdminController {
 
+    @SuppressWarnings("SpringJavaInjectionPointsAutowiringInspection")
     @Autowired
     private AdminServiceImpl service;
 

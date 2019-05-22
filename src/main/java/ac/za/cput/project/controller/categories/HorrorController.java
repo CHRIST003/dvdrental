@@ -12,6 +12,7 @@ import java.util.Set;
 @RequestMapping("/dvdrental/horror")
 public class HorrorController {
 
+    @SuppressWarnings("SpringJavaInjectionPointsAutowiringInspection")
     @Autowired
     private HorrorServiceImpl service;
 

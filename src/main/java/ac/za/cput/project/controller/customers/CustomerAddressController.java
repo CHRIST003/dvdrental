@@ -12,6 +12,7 @@ import java.util.Set;
 @RequestMapping("/dvdrental/customer address")
 public class CustomerAddressController {
 
+    @SuppressWarnings("SpringJavaInjectionPointsAutowiringInspection")
     @Autowired
     private CustomerAddressServiceImpl service;
 

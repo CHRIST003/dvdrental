@@ -4,9 +4,12 @@ import ac.za.cput.project.domain.rents.RentReport;
 import ac.za.cput.project.repository.rents.RentReportRepository;
 import ac.za.cput.project.repository.rents.impl.RentReportRepositoryImpl;
 import ac.za.cput.project.service.rents.RentReportService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+
+@Service
 public class RentReportServiceImpl implements RentReportService {
 
     private static RentReportServiceImpl service = null;

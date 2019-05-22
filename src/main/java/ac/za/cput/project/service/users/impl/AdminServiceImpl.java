@@ -4,9 +4,12 @@ import ac.za.cput.project.domain.users.Admin;
 import ac.za.cput.project.repository.users.AdminRepository;
 import ac.za.cput.project.repository.users.impl.AdminRepositoryImpl;
 import ac.za.cput.project.service.users.AdminService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+
+@Service
 public class AdminServiceImpl implements AdminService {
 
     private static AdminServiceImpl service = null;

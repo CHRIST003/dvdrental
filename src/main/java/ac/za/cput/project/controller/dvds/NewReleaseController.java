@@ -12,6 +12,7 @@ import java.util.Set;
 @RequestMapping("/dvdrental/new release")
 public class NewReleaseController {
 
+    @SuppressWarnings("SpringJavaInjectionPointsAutowiringInspection")
     @Autowired
     private NewReleaseServiceImpl service;
 

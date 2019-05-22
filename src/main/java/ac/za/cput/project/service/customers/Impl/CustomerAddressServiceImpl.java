@@ -4,9 +4,11 @@ import ac.za.cput.project.domain.customers.CustomerAddress;
 import ac.za.cput.project.repository.customers.CustomerAddressRepository;
 import ac.za.cput.project.repository.customers.impl.CustomerAddressRepositoryImpl;
 import ac.za.cput.project.service.customers.CustomerAddressService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class CustomerAddressServiceImpl implements CustomerAddressService {
 
     private static CustomerAddressServiceImpl service = null;

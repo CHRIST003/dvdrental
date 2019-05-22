@@ -3,6 +3,8 @@ package ac.za.cput.project.domain.sales;
 
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 
+import java.util.Objects;
+
 @EntityScan
 public class SaleReport {
 
@@ -135,5 +137,18 @@ public class SaleReport {
                 ", QtyOfDvd=" + QtyOfDvd +
                 ", TotalOfMoneyPaid=" + TotalOfMoneyPaid +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        SaleReport saleReport = (SaleReport) o;
+        return SaleID.equals(saleReport.SaleID);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(SaleID);
     }
 }

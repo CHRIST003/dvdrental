@@ -4,9 +4,11 @@ import ac.za.cput.project.domain.customers.Members;
 import ac.za.cput.project.repository.customers.MembersRepository;
 import ac.za.cput.project.repository.customers.impl.MembersRepositoryImpl;
 import ac.za.cput.project.service.customers.MembersService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class MembersServiceImpl implements MembersService {
 
     private static MembersServiceImpl service = null;

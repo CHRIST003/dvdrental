@@ -2,8 +2,10 @@ package ac.za.cput.project.controller.dvds;
 
 import ac.za.cput.project.domain.dvds.DvdStore;
 import ac.za.cput.project.factory.dvds.DvdStoreFactory;
+import ac.za.cput.project.service.dvds.DvdStoreService;
 import ac.za.cput.project.service.dvds.impl.DvdStoreServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Set;
@@ -12,6 +14,10 @@ import java.util.Set;
 @RequestMapping("/dvdrental/Dvd Store")
 public class DvdStoreController {
 
+//    @Autowired
+//    private DvdStoreServiceImpl service;
+
+    @SuppressWarnings("SpringJavaInjectionPointsAutowiringInspection")
     @Autowired
     private DvdStoreServiceImpl service;
 

@@ -12,6 +12,7 @@ import java.util.Set;
 @RequestMapping("/dvdrental/normal customer")
 public class NormalCustomerController {
 
+    @SuppressWarnings("SpringJavaInjectionPointsAutowiringInspection")
     @Autowired
     private NormalCustomerServiceImpl service;
 

@@ -12,6 +12,7 @@ import java.util.Set;
 @RequestMapping("/dvdrental/rent report")
 public class RentReportController {
 
+    @SuppressWarnings("SpringJavaInjectionPointsAutowiringInspection")
     @Autowired
     private RentReportServiceImpl service;
 

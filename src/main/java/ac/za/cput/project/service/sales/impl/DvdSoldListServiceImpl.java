@@ -4,9 +4,12 @@ import ac.za.cput.project.domain.sales.DvdSoldList;
 import ac.za.cput.project.repository.sales.DvdSoldListRepository;
 import ac.za.cput.project.repository.sales.impl.DvdSoldListRepositoryImpl;
 import ac.za.cput.project.service.sales.DvdSoldListService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+
+@Service
 public class DvdSoldListServiceImpl implements DvdSoldListService {
 
     private static DvdSoldListServiceImpl service = null;

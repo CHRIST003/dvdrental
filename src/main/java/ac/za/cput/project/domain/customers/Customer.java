@@ -2,6 +2,8 @@ package ac.za.cput.project.domain.customers;
 
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 
+import java.util.Objects;
+//Must come back to it for later change
 @EntityScan
 public abstract class Customer {
 
@@ -113,17 +115,17 @@ public abstract class Customer {
                 '}';
     }
 
-//    @Override
-//    public boolean equals(Object o) {
-//        if (this == o) return true;
-//        if (o == null || getClass() != o.getClass()) return false;
-//        Customer customer = (Customer) o;
-//        return CustID.equals(customer.CustID);
-//    }
-//
-//    @Override
-//    public int hashCode() {
-//        return Objects.hash(CustID);
-//    }
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Customer customer = (Customer) o;
+        return CustID.equals(customer.CustID);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(CustID);
+    }
 
 }

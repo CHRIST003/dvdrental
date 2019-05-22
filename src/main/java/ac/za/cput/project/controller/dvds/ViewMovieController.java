@@ -12,6 +12,7 @@ import java.util.Set;
 @RequestMapping("/dvdrental/view movie")
 public class ViewMovieController {
 
+    @SuppressWarnings("SpringJavaInjectionPointsAutowiringInspection")
     @Autowired
     private ViewMovieServiceImpl service;
 

@@ -4,9 +4,11 @@ import ac.za.cput.project.domain.dvds.Dvd;
 import ac.za.cput.project.repository.dvds.DvdRepository;
 import ac.za.cput.project.repository.dvds.impl.DvdRepositoryImpl;
 import ac.za.cput.project.service.dvds.DvdService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class DvdServiceImpl implements DvdService {
 
     private static DvdServiceImpl service = null;

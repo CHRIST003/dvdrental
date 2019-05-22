@@ -4,9 +4,11 @@ import ac.za.cput.project.domain.categories.Category;
 import ac.za.cput.project.repository.categories.CategoryRepository;
 import ac.za.cput.project.repository.categories.impl.CategoryRepositoryImpl;
 import ac.za.cput.project.service.categories.CategoryService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class CategoryServiceImpl implements CategoryService {
 
     private static CategoryServiceImpl service = null;

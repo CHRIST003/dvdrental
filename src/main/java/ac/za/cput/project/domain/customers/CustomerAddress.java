@@ -2,6 +2,8 @@ package ac.za.cput.project.domain.customers;
 
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 
+import java.util.Objects;
+
 @EntityScan
 public class CustomerAddress {
 
@@ -66,5 +68,27 @@ public class CustomerAddress {
 
             return new CustomerAddress(this);
         }
+    }
+
+    @Override
+    public String toString() {
+        return "CustomerAddress{" +
+                "physicalAddress='" + physicalAddress + '\'' +
+                ", postalAddress='" + postalAddress + '\'' +
+                ", postCode=" + postCode +
+                '}';
+    }
+// have to come back to update the physical address to maybe an ID
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        CustomerAddress customerAddress = (CustomerAddress) o;
+        return physicalAddress.equals(customerAddress.physicalAddress);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(physicalAddress);
     }
 }

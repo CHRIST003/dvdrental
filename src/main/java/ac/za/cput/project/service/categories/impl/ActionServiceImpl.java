@@ -4,9 +4,11 @@ import ac.za.cput.project.domain.categories.Action;
 import ac.za.cput.project.repository.categories.ActionRepository;
 import ac.za.cput.project.repository.categories.impl.ActionRepositoryImpl;
 import ac.za.cput.project.service.categories.ActionService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class ActionServiceImpl implements ActionService {
 
     private static ActionServiceImpl service = null;

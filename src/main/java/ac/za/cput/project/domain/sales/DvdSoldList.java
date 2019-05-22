@@ -1,7 +1,10 @@
 package ac.za.cput.project.domain.sales;
 
 
+import ac.za.cput.project.domain.rents.Rent;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
+
+import java.util.Objects;
 
 @EntityScan
 public class DvdSoldList {
@@ -68,5 +71,27 @@ public class DvdSoldList {
         public DvdSoldList build(){
             return new DvdSoldList(this);
         }
+    }
+
+    @Override
+    public String toString() {
+        return "DvdSoldList{" +
+                "DvdSaleListID='" + DvdSaleListID + '\'' +
+                ", QtyOfDvd=" + QtyOfDvd +
+                ", Total=" + Total +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        DvdSoldList dvdSoldList = (DvdSoldList) o;
+        return DvdSaleListID.equals(dvdSoldList.DvdSaleListID);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(DvdSaleListID);
     }
 }

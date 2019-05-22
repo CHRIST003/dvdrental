@@ -12,6 +12,7 @@ import java.util.Set;
 @RequestMapping("/dvdrental/comedy")
 public class ComedyController {
 
+    @SuppressWarnings("SpringJavaInjectionPointsAutowiringInspection")
     @Autowired
     private ComedyServiceImpl service;
 

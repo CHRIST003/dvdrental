@@ -4,9 +4,12 @@ import ac.za.cput.project.domain.sales.SaleReport;
 import ac.za.cput.project.repository.sales.SaleReportRepository;
 import ac.za.cput.project.repository.sales.impl.SaleReportRepositoryImpl;
 import ac.za.cput.project.service.sales.SaleReportService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+
+@Service
 public class SaleReportServiceImpl implements SaleReportService {
 
     private static SaleReportServiceImpl service = null;

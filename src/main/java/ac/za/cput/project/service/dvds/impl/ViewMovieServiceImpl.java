@@ -4,9 +4,12 @@ import ac.za.cput.project.domain.dvds.ViewMovie;
 import ac.za.cput.project.repository.dvds.ViewMovieRepository;
 import ac.za.cput.project.repository.dvds.impl.ViewMovieRepositoryImpl;
 import ac.za.cput.project.service.dvds.ViewMovieService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+
+@Service
 public class ViewMovieServiceImpl implements ViewMovieService {
 
     private static ViewMovieServiceImpl service = null;

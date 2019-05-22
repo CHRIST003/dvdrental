@@ -4,9 +4,12 @@ import ac.za.cput.project.domain.dvds.OldRelease;
 import ac.za.cput.project.repository.dvds.OldReleaseRepository;
 import ac.za.cput.project.repository.dvds.impl.OldReleaseRepositoryImpl;
 import ac.za.cput.project.service.dvds.OldReleaseService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+
+@Service
 public class OldReleaseServiceImpl implements OldReleaseService {
 
     private static OldReleaseServiceImpl service = null;

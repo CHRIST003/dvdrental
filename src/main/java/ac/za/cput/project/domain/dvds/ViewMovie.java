@@ -3,6 +3,8 @@ package ac.za.cput.project.domain.dvds;
 
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 
+import java.util.Objects;
+
 @EntityScan
 public class ViewMovie {
 
@@ -79,6 +81,18 @@ public class ViewMovie {
             return this;
         }
 
+        public Builder copy(ViewMovie viewMovie){
+            this.DvdID = viewMovie.DvdID;
+            this.Title = viewMovie.Title;
+            this.Category = viewMovie.Category;
+            this.type = viewMovie.type;
+            this.availability = viewMovie.availability;
+
+
+            return this;
+
+        }
+
         public ViewMovie build(){
             return new ViewMovie(this);
         }
@@ -95,4 +109,18 @@ public class ViewMovie {
                 ", availability=" + availability +
                 '}';
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        ViewMovie viewMovie = (ViewMovie) o;
+        return DvdID.equals(viewMovie.DvdID);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(DvdID);
+    }
+
 }

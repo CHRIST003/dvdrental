@@ -4,9 +4,12 @@ import ac.za.cput.project.domain.useraccess.Login;
 import ac.za.cput.project.repository.useraccess.LoginRepository;
 import ac.za.cput.project.repository.useraccess.impl.LoginRepositoryImpl;
 import ac.za.cput.project.service.useraccess.LoginService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+
+@Service
 public class LoginServiceImpl implements LoginService {
 
     private static LoginServiceImpl service = null;

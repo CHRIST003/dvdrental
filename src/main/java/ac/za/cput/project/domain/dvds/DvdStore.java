@@ -2,6 +2,8 @@ package ac.za.cput.project.domain.dvds;
 
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 
+import java.util.Objects;
+
 @EntityScan
 public class DvdStore {
 
@@ -67,4 +69,18 @@ public class DvdStore {
                     '}';
         }
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        DvdStore dvdStore = (DvdStore) o;
+        return name.equals(dvdStore.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name);
+    }
+
 }

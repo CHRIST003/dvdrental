@@ -4,9 +4,11 @@ import ac.za.cput.project.domain.categories.Cartoon;
 import ac.za.cput.project.repository.categories.CartoonRepository;
 import ac.za.cput.project.repository.categories.impl.CartoonRepositoryImpl;
 import ac.za.cput.project.service.categories.CartoonService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class CartoonServiceImpl implements CartoonService {
 
     private static CartoonServiceImpl service = null;

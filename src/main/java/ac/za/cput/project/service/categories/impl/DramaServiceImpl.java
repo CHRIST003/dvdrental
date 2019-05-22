@@ -4,9 +4,11 @@ import ac.za.cput.project.domain.categories.Drama;
 import ac.za.cput.project.repository.categories.DramaRepository;
 import ac.za.cput.project.repository.categories.impl.DramaRepositoryImpl;
 import ac.za.cput.project.service.categories.DramaService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class DramaServiceImpl implements DramaService {
 
     private static DramaServiceImpl service = null;

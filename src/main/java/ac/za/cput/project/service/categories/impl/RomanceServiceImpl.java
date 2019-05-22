@@ -4,9 +4,12 @@ import ac.za.cput.project.domain.categories.Romance;
 import ac.za.cput.project.repository.categories.RomanceRepository;
 import ac.za.cput.project.repository.categories.impl.RomanceRepositoryImpl;
 import ac.za.cput.project.service.categories.RomanceService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+
+@Service
 public class RomanceServiceImpl implements RomanceService {
 
     private static RomanceServiceImpl service = null;

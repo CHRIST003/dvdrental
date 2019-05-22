@@ -3,6 +3,8 @@ package ac.za.cput.project.domain.customers;
 
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 
+import java.util.Objects;
+
 @EntityScan
 public class ViewCustomer {
 
@@ -78,6 +80,16 @@ public class ViewCustomer {
             return this;
         }
 
+        public Builder copy(ViewCustomer viewCustomer){
+            this.CustID = viewCustomer.CustID;
+            this.Name = viewCustomer.Name;
+            this.LastName = viewCustomer.LastName;
+            this.PhoneNumber = viewCustomer.PhoneNumber;
+            this.Credit = viewCustomer.Credit;
+            return this;
+
+        }
+
         public ViewCustomer build(){
             return new ViewCustomer(this);
         }
@@ -94,4 +106,19 @@ public class ViewCustomer {
                 ", Credit=" + Credit +
                 '}';
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        ViewCustomer viewCustomer = (ViewCustomer) o;
+        return CustID.equals(viewCustomer.CustID);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(CustID);
+    }
 }
+
+

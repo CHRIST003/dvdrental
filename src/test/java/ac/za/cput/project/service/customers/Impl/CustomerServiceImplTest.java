@@ -1,10 +1,13 @@
 package ac.za.cput.project.service.customers.Impl;
 
 import org.junit.Before;
+import org.junit.FixMethodOrder;
 import org.junit.Test;
+import org.junit.runners.MethodSorters;
 
 import static org.junit.Assert.*;
 
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class CustomerServiceImplTest {
 
     @Before

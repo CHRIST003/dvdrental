@@ -4,9 +4,12 @@ import ac.za.cput.project.domain.categories.Horror;
 import ac.za.cput.project.repository.categories.HorrorRepository;
 import ac.za.cput.project.repository.categories.impl.HorrorRepositoryImpl;
 import ac.za.cput.project.service.categories.HorrorService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+
+@Service
 public class HorrorServiceImpl implements HorrorService {
 
     private static HorrorServiceImpl service = null;

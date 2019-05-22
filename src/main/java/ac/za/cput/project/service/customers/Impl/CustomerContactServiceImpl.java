@@ -4,9 +4,11 @@ import ac.za.cput.project.domain.customers.CustomerContact;
 import ac.za.cput.project.repository.customers.CustomerContactRepository;
 import ac.za.cput.project.repository.customers.impl.CustomerContactRepositoryImpl;
 import ac.za.cput.project.service.customers.CustomerContactService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class CustomerContactServiceImpl implements CustomerContactService {
 
     private static CustomerContactServiceImpl service = null;

@@ -2,6 +2,8 @@ package ac.za.cput.project.domain.customers;
 
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 
+import java.util.Objects;
+
 @EntityScan
 public class CustomerContact {
 
@@ -49,5 +51,18 @@ public class CustomerContact {
         return "CustomerContact{" +
                 "phoneNumber='" + phoneNumber + '\'' +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        CustomerContact customerContact = (CustomerContact) o;
+        return phoneNumber.equals(customerContact.phoneNumber);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(phoneNumber);
     }
 }

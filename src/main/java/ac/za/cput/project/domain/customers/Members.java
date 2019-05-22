@@ -140,7 +140,7 @@ public class Members extends Customer {
 
     @Override
     public String toString() {
-        return "Members{" +
+        return "NormalCustomer{" +
                 "CustID='" + CustID + '\'' +
                 ", Name='" + Name + '\'' +
                 ", LastName='" + LastName + '\'' +
