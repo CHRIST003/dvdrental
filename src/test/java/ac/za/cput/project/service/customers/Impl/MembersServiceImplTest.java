@@ -28,8 +28,8 @@ public class MembersServiceImplTest {
     public void setUp() throws Exception {
 
         this.repository = MembersRepositoryImpl.getRepository();
-        this.members = MembersFactory.getMembers("7654","Amour","Nganga",
-                true,true,600,"Members");
+        this.members = MembersFactory.getMembers("Amour","Nganga",true,
+                true, 600,"Members");
     }
 
     @Test

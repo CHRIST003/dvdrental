@@ -6,7 +6,8 @@ import ac.za.cput.project.repository.categories.ActionRepository;
 import java.util.HashSet;
 import java.util.Set;
 
-public class ActionRepositoryImpl implements ActionRepository {
+public class
+ActionRepositoryImpl implements ActionRepository {
 
     private static ActionRepositoryImpl repository = null;
     private Set<Action> actions;

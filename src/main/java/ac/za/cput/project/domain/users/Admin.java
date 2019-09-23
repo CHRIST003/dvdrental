@@ -87,6 +87,8 @@ public class Admin {
         return AdID.equals(admin.AdID);
     }
 
+
+
     @Override
     public int hashCode() {
         return Objects.hash(AdID);

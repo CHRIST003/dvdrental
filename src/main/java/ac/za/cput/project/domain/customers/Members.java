@@ -1,8 +1,11 @@
 package ac.za.cput.project.domain.customers;
 
+import org.jetbrains.annotations.NotNull;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 
 import java.util.Objects;
+
+import static java.util.Objects.*;
 
 
 @EntityScan
@@ -121,8 +124,8 @@ public class Members extends Customer {
             return this;
         }
 
-        public Builder copy(Members members){
-            this.CustID = members.CustID;
+        public Builder copy(@NotNull Members members){
+            this.CustID = requireNonNull(members).CustID;
             this.Name = members.Name;
             this.LastName = members.LastName;
             this.CanBuy = members.CanBuy;

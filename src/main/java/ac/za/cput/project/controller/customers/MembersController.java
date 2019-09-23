@@ -19,8 +19,8 @@ public class MembersController {
     @GetMapping("/create/{Name}")
     public @ResponseBody
     Members create(@PathVariable String Name){
-        Members members = MembersFactory.getMembers("5678", "Christ", "Nganga",
-                true,true,1000,"members");
+        Members members = MembersFactory.getMembers("Christ", "Nganga", true,
+                true,1000,"members");
         return service.create(members);
 
     }

@@ -5,9 +5,9 @@ import ac.za.cput.project.util.Amr;
 
 public class MembersFactory {
 
-        public static Members getMembers(String CustID,String Name, String LastName, boolean CanBuy,boolean CanRent,double credit,String type){
+        public static Members getMembers(String Name, String LastName, boolean CanBuy,boolean CanRent,double credit,String type){
             return new Members.Builder().CustID(Amr.generateId())
-                    .CustID(CustID)
+
                     .Name(Name)
                     .LastName(LastName)
                     .CanBuy(CanBuy)

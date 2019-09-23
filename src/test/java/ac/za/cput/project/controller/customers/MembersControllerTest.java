@@ -20,7 +20,7 @@ public class MembersControllerTest {
 
     @Autowired
     private TestRestTemplate restTemplate;
-    private String baseURL="http://localhost:8080/student";
+    private String baseURL="http://localhost:8080/members";
     @Test
     public void getAll() {
 

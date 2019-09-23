@@ -1,9 +1,10 @@
-package ac.za.cput.project.repository.customers;
+package ac.za.cput.project.repository.customers.impl;
 
 import ac.za.cput.project.domain.customers.CustomerContact;
 import ac.za.cput.project.factory.customers.CustomerContactFactory;
 import ac.za.cput.project.repository.customers.CustomerContactRepository;
 import ac.za.cput.project.repository.customers.impl.CustomerContactRepositoryImpl;
+import org.jetbrains.annotations.NotNull;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.FixMethodOrder;
@@ -19,6 +20,10 @@ public class CustomerContactRepositoryImplTest {
     private CustomerContactRepository repository;
     private CustomerContact customerContact;
 
+    /**
+     * @return
+     */
+    @NotNull
     private CustomerContact getSavedCustomerContact() {
         Set<CustomerContact> savedCustomerContacts = this.repository.getAll();
         return savedCustomerContacts.iterator().next();

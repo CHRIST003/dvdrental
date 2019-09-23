@@ -1,4 +1,4 @@
-package ac.za.cput.project.repository.customers;
+package ac.za.cput.project.repository.customers.impl;
 
 import org.junit.Before;
 import org.junit.Test;

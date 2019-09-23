@@ -2,7 +2,6 @@ package ac.za.cput.project.repository.users;
 
 import ac.za.cput.project.domain.users.Admin;
 import ac.za.cput.project.factory.users.AdminFactory;
-import ac.za.cput.project.repository.users.AdminRepository;
 import ac.za.cput.project.repository.users.impl.AdminRepositoryImpl;
 import org.junit.Assert;
 import org.junit.Before;

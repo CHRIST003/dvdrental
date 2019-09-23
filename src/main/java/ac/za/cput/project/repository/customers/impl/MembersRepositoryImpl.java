@@ -57,8 +57,7 @@ public class MembersRepositoryImpl implements MembersRepository {
     @Override
     public Members read(final String CustID) {
 
-        Members members = findMembers(CustID);
-        return members;
+        return findMembers(CustID);
     }
 
     @Override

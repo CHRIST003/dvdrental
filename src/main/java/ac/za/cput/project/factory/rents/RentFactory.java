@@ -21,6 +21,4 @@ public class RentFactory {
                 .price(price)
                 .build();
     }
-
-
 }

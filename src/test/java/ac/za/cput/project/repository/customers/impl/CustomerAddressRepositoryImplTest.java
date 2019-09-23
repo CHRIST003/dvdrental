@@ -1,4 +1,4 @@
-package ac.za.cput.project.repository.customers;
+package ac.za.cput.project.repository.customers.impl;
 
 import ac.za.cput.project.domain.customers.CustomerAddress;
 import ac.za.cput.project.factory.customers.CustomerAddressFactory;

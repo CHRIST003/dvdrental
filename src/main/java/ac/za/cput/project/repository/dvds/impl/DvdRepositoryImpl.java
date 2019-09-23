@@ -22,11 +22,11 @@ public class DvdRepositoryImpl implements DvdRepository {
                 .orElse(null);
     }
 
-    public static DvdRepositoryImpl getRepository(){
+        public static DvdRepositoryImpl getRepository(){
 
-        if(repository == null) repository = new DvdRepositoryImpl();
-        return repository;
-    }
+            if(repository == null) repository = new DvdRepositoryImpl();
+            return repository;
+        }
 
 
     @Override
